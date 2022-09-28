@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/allWords.txt</file>
+        <file>Resources/officialWords.txt</file>
+        <file>Resources/possibleWordleAnswersWithFrequencies.txt</file>
+        <file>Resources/possibleWordleGuessesWithFrequencies.txt</file>
+    </qresource>
+</RCC>

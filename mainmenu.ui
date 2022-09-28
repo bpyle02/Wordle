@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QMainWindow" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="mainMenu">
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>1921</width>
+          <height>1081</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="leftMargin">
+          <number>850</number>
+         </property>
+         <property name="topMargin">
+          <number>150</number>
+         </property>
+         <property name="rightMargin">
+          <number>850</number>
+         </property>
+         <property name="bottomMargin">
+          <number>450</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="title_2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>35</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Wordle</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="playButton">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Play</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="viewStats">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>View Stats</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="settings">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Settings</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stats">
+       <widget class="QFrame" name="verticalFrame">
+        <property name="geometry">
+         <rect>
+          <x>-11</x>
+          <y>-1</y>
+          <width>1921</width>
+          <height>1071</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Return to Main Menu</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="game">
+       <widget class="QLabel" name="label_1_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>380</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>380</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_0_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>310</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>660</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>450</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_0_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>310</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>520</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>450</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>520</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>590</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>520</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>660</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_0_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>310</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>660</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>450</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>660</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>590</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>590</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>380</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>590</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_0_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>310</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_1">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>590</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_0_4">
+        <property name="geometry">
+         <rect>
+          <x>1065</x>
+          <y>310</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>660</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>520</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>380</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_0">
+        <property name="geometry">
+         <rect>
+          <x>785</x>
+          <y>450</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_2">
+        <property name="geometry">
+         <rect>
+          <x>925</x>
+          <y>450</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>380</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_3">
+        <property name="geometry">
+         <rect>
+          <x>995</x>
+          <y>520</y>
+          <width>62</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lato</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel 
+{
+  	border: 2px solid gray;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="title">
+        <property name="geometry">
+         <rect>
+          <x>875</x>
+          <y>80</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>35</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Wordle</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>850</y>
+          <width>151</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Return to Main Menu</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>850</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Show Stats</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>522</y>
+          <width>140</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>485</y>
+          <width>140</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Enter a Wordle</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>825</x>
+          <y>485</y>
+          <width>270</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Enter Number of Simulations</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>835</x>
+          <y>520</y>
+          <width>130</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>520</y>
+          <width>115</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enter</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="gameSettings">
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>2091</width>
+          <height>1091</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>750</number>
+         </property>
+         <property name="topMargin">
+          <number>150</number>
+         </property>
+         <property name="rightMargin">
+          <number>750</number>
+         </property>
+         <property name="bottomMargin">
+          <number>450</number>
+         </property>
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Number of Simulations</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QPushButton" name="pushButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Submit</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1" colspan="2">
+          <widget class="QSpinBox" name="numSimulations">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1" colspan="2">
+          <widget class="QLineEdit" name="selectWordle">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Wordle</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0" colspan="3">
+          <widget class="QLabel" name="label_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Set simulations to 0 to play by yourself. Leave wordle blank to let the computer randomly generate one.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
